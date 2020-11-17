@@ -1,0 +1,51 @@
+/* LEFTSIDE */
+
+.leftside {
+  padding: 28px 0;
+  width: 60%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.leftside_carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 82px;
+}
+
+.leftside_carousel-button {
+  background: none;
+  cursor: pointer;
+}
+
+.leftside_carousel-item {
+  background: url("../img/img_carousel.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 6px 0;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.leftside_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.leftside_img-badge {
+  background: rgb(206, 46, 42);
+  color: rgb(251, 251, 251);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 8.88px;
+  font-weight: 700;
+  padding: 6px 6px 6px 16px;
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 14% 100%, 0% 50%);
+}
