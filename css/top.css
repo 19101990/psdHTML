@@ -1,3 +1,5 @@
+/* TOP LINKS */
+
 .top-links {
   background: rgb(46, 46, 46);
 }
@@ -5,6 +7,7 @@
 .top-links_list {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 .top-links_list-item {
@@ -17,11 +20,11 @@
   margin-right: 6px;
 }
 
-/* ************************************** */
+/* HEADER */
 
 .header {
   background: url("../img/bg_header.png");
-  padding: 28px 0;
+  padding: 28px 0 22px 0;
 }
 
 .header--flex {
@@ -32,7 +35,7 @@
 }
 
 .header_logo {
-  margin: 0 28px;
+  margin: 0 28px 0 0;
 }
 
 .header_search-input {
@@ -50,7 +53,7 @@
 }
 
 .header_links--medium {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .header_links-lang {
@@ -61,10 +64,26 @@
 .header_links-basket {
   display: flex;
   align-items: center;
-  background: url("../img/bg_red-paint.png");
   color: rgb(251, 251, 251);
-  padding: 0 6px;
-  height: 155px;
+  padding: 0 15px;
+  position: relative;
+  min-height: 5px;
+  min-width: 80px;
+  z-index: 100;
+}
+
+.header_links-basket::after {
+  content: "";
+  position: absolute;
+  background: url("../img/bg_red-paint.png");
+  background-size: cover;
+  background-position: center;
+  height: 165px;
+  top: -75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .header_links-basket_item {
@@ -74,4 +93,50 @@
 .header_links-account,
 .header_links-lang {
   margin: 0 20px 0 0;
+}
+
+/* NAVIGATION */
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav_list-item a {
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 26px 50px 26px 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav_list-item-icon {
+  margin-left: 10px;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+  background: url("../img/bg_header.png");
+  background-position: center top;
+  font-size: 12px;
+}
+
+.breadcrumbs_link {
+  margin: 12px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.breadcrumbs_link:first-of-type {
+  margin-left: 0;
+}
+
+.breadcrumbs_link--active {
+  font-weight: 700;
 }
