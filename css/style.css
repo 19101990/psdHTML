@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import "top.css";
 @import "projector.css";
+@import "hotspot.css";
+@import "description.css";
 
 * {
   margin: 0;
@@ -15,7 +17,7 @@
 
 .btn--dark {
   background: rgb(46, 46, 46);
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   padding: 17px 20px;
 }
 
@@ -23,16 +25,42 @@
   background: url("../img/bg_button_red-paint.png");
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   padding: 24px 20px;
 }
 
-.text--big {
-  font-size: 13px;
+.btn--medium {
+  background: url("../img/bg_button_red-paint.png");
   font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding: 16px 20px;
+}
+
+.text--big {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text--medium {
+  font-size: 13px;
 }
 
 .text--small {
   font-size: 11px;
   font-weight: 200;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.icon-right {
+  margin-right: 12px;
 }

@@ -1,0 +1,28 @@
+.hotspot {
+  margin-top: 48px;
+}
+
+.hotspot_title {
+  display: flex;
+  align-items: center;
+}
+
+.hotspot_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px;
+}
+
+.hotspot_item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.hotspot_item:last-of-type {
+  margin-right: 0;
+}
+
+.hotspot_text {
+  margin-left: 36px;
+}

@@ -45,7 +45,7 @@
 
 .leftside_img-badge {
   background: rgb(206, 46, 42);
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
   right: 0;
@@ -210,10 +210,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .rightside_negotiate {
   display: flex;
   align-items: center;
-}
-
-.icon-cash {
-  margin-right: 12px;
 }
 
 .rightside_benefits {
