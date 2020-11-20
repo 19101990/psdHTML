@@ -1,0 +1,25 @@
+.tips {
+  margin-top: 64px;
+}
+
+.tips_posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tips_post {
+  width: 48%;
+}
+
+.post_title {
+}
+
+.post_body {
+  display: flex;
+  margin: 8px 0;
+  line-height: 20px;
+}
+
+.post_text {
+  padding: 24px;
+}

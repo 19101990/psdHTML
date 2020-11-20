@@ -1,0 +1,51 @@
+footer {
+  background: url("../img/bg_footer.png"), rgb(23, 23, 23);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* max-height: 550px; */
+  margin-top: 54px;
+  color: rgb(255, 255, 255);
+  padding-top: 300px;
+}
+
+.footer_container {
+  position: relative;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_list a {
+  color: rgb(224, 220, 220);
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.footer_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px 0;
+}
+
+.icon_social {
+  margin: 16px 24px 16px 0;
+}
+
+.icon-footer {
+  position: relative;
+  top: 3px;
+  margin-right: 12px;
+}
+
+.logo_iai {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
