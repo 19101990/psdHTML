@@ -28,6 +28,10 @@ footer {
   line-height: 24px;
 }
 
+.footer_list a:hover {
+  text-decoration: underline;
+}
+
 .footer_title {
   text-transform: uppercase;
   font-weight: 700;

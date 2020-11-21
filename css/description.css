@@ -50,6 +50,11 @@
   background: none;
 }
 
+/* .question_text {
+  opacity: 1;
+  height: auto;
+} */
+
 .questions_row {
   display: flex;
   align-items: center;
@@ -58,6 +63,10 @@
 
 .hide {
   display: none;
+  /* transition: all 0.35s ease-in;
+  opacity: 0;
+  height: 0;
+  overflow: hidden; */
 }
 
 .border {

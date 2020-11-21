@@ -56,9 +56,54 @@
   font-size: 17px;
 }
 
-.header_links-lang {
+.lang_dropdown {
+  position: relative;
+}
+
+.lang_menu {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  min-width: 60px;
+  position: relative;
+  padding: 8px 0;
+}
+
+.lang_submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* top: 24px; */
+  list-style: none;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.082);
+  z-index: 1000;
+  /* make the submenu smooth on hover */
+  transition: opacity 0.35s ease-in;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.lang_submenu-item {
+  padding: 8px 16px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.lang_submenu-item:hover {
+  background: rgb(241, 241, 241);
+}
+
+.lang_dropdown:hover .lang_submenu {
+  /* display: block; */
+  opacity: 1;
+  height: auto;
 }
 
 .header_links-basket {
@@ -95,6 +140,15 @@
   margin: 0 20px 0 0;
 }
 
+.header_link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.header_link:hover {
+  color: rgb(212, 11, 11);
+}
+
 /* NAVIGATION */
 
 .nav_list {
@@ -103,19 +157,66 @@
   padding: 0;
 }
 
+.nav_list-item {
+  position: relative;
+  padding: 0 1em 0 0;
+}
+
 .nav_list-item a {
   color: #000;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 26px 50px 26px 0;
+  margin: 13px 50px 13px 0;
+  padding: 13px 0;
   display: flex;
   align-items: center;
 }
 
+.nav_list-item a:hover {
+  box-shadow: 0px 2px 0px 0px rgb(212, 11, 11);
+}
+
 .nav_list-item-icon {
   margin-left: 10px;
+}
+
+.submenu {
+  /* display: none; */
+  position: absolute;
+  left: -5px;
+  list-style: none;
+  padding: 0;
+  min-width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.082);
+  z-index: 1000;
+  /* make the submenu smooth on hover */
+  transition: opacity 0.35s ease-in;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdown:hover .submenu {
+  /* display: block; */
+  opacity: 1;
+  height: auto;
+}
+
+.submenu-item a:hover {
+  color: rgb(212, 11, 11);
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.submenu-item a {
+  font-size: 11px;
+  font-weight: 200;
+  margin: 0;
+  padding: 12px 24px;
+  min-width: 150px;
 }
 
 /* BREADCRUMBS */

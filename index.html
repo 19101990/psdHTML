@@ -57,13 +57,24 @@
             />
             <button class="btn--dark"><i class="fas fa-search"></i></button>
           </div>
+
           <div class="header_links">
-            <div class="header_links-lang">
-              PL <img src="img/icon_pl.png" /><img
-                src="img/icon_down-arrow.png"
-              />
+            <div class="header_links-lang lang_dropdown">
+              <div class="lang_menu">
+                PL <img src="img/icon_pl.png" /><img
+                  src="img/icon_down-arrow.png"
+                />
+              </div>
+              <div class="lang_submenu">
+                <a href="#" class="lang_submenu-item">
+                  DE<img src="img/icon_de.png" />
+                </a>
+                <a href="#" class="lang_submenu-item">
+                  EN<img src="img/icon_en.png" />
+                </a>
+              </div>
             </div>
-            <div class="header_links-account">TWOJE KONTO</div>
+            <div class="header_links-account"><a class="header_link" href="">TWOJE KONTO</a></div>
             <div class="header_links-basket">
               <img
                 class="header_links-basket_item"
@@ -84,16 +95,33 @@
       <div class="nav">
         <div class="container">
           <ul class="nav_list">
-            <li class="nav_list-item">
-              <a href="#">
+            <li class="nav_list-item dropdown">
+              <a href="#" class="dropdown_button">
                 Gotowe zestawy do gry
                 <img
                   class="nav_list-item-icon"
                   src="img/icon_down-arrow.png"
                   alt=""
               /></a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#">Submenu item 1</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 2</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 3</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 4</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 5</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav_list-item">
+            <li class="nav_list-item dropdown">
               <a href="#">
                 Sprzęt
                 <img
@@ -101,8 +129,19 @@
                   src="img/icon_down-arrow.png"
                   alt=""
               /></a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#">Submenu item 1</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 2</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 3</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav_list-item">
+            <li class="nav_list-item dropdown">
               <a href="#">
                 Odzież
                 <img
@@ -110,6 +149,17 @@
                   src="img/icon_down-arrow.png"
                   alt=""
               /></a>
+              <ul class="submenu">
+                <li class="submenu-item">
+                  <a href="#">Submenu item 1</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 2</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="">Submenu item 3</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_list-item">
               <a href="#">Kulki</a>
@@ -147,7 +197,7 @@
             <button class="leftside_carousel-button">
               <img src="img/icon_upper-arrow.png" alt="" />
             </button>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-item-active">
               <img src="img/img_carousel.png" alt="" />
             </div>
             <div class="carousel-item">
@@ -182,7 +232,7 @@
             Marker Tippmann FT-50 Lite 50 Cal Rental (black)
           </h2>
           <p class="rightside_text">
-            PRODUCENT: <span class="rightside_text--red">Dye</span> KOD
+            PRODUCENT: <a href="#" class="rightside_text--red">Dye</a> KOD
             PRODUKTU: 6578758769878
           </p>
 
@@ -252,11 +302,11 @@
               </p>
             </div>
             <div class="rightside_delivery">
-              <p
+              <a href="#""
                 class="rightside_text--red rightside_text--small rightside_text--bold"
               >
                 SPRAWDŹ CZASY I KOSZTY WYSYŁKI
-              </p>
+              </a>
             </div>
           </div>
 
@@ -300,18 +350,18 @@
             <div class="rightside_negotiate">
               <img class="icon-right" src="img/icon_cash.png" alt="" />
               <p class="text--medium text--bold">
-                Znalazłeź ten produkt taniej?<br /><span
+                Znalazłeź ten produkt taniej?<br /><a href="#"
                   class="rightside_text--red rightside_text--small"
-                  >WYNEGOCJUJ DOBRĄ CENĘ</span
+                  >WYNEGOCJUJ DOBRĄ CENĘ</a
                 >
               </p>
             </div>
             <div class="rightside_comparison">
-              <p
+              <a href="#"
                 class="rightside_text--red rightside_text--small rightside_text--bold"
               >
                 DODAJ DO PORÓWNANIA
-              </p>
+              </a>
             </div>
           </div>
 
@@ -338,9 +388,9 @@
               <div class="benefit">
                 <img class="benefit_icon" src="img/icon_percent.png" alt="" />
                 <p class="benefit_text rightside_text--bold">
-                  ZAKUPY NA RATY<br /><span
+                  ZAKUPY NA RATY<br /><a href="#"
                     class="rightside_text--red rightside_text--small"
-                    >OBLICZ RATĘ >></span
+                    >OBLICZ RATĘ >></a
                   >
                 </p>
               </div>
@@ -557,8 +607,8 @@
         </div>
         <div class="tips_posts">
           <div class="tips_post">
-            <h3 class="post_title text--semi">
-              Jak stworzyć samemu farby do gery?
+            <h3><a href="" class="post_link text--semi">
+              Jak stworzyć samemu farby do gery?</a>
             </h3>
             <div class="post_body">
               <img src="img/img_post1.png" alt="" />
@@ -573,8 +623,8 @@
             </div>
           </div>
           <div class="tips_post">
-            <h3 class="post_title text--semi">
-              Jak dobrać naboje z farbą do mojego sprzętu?
+            <a>
+              <a href="" class="post_link text--semi">Jak dobrać naboje z farbą do mojego sprzętu?</a>
             </h3>
             <div class="post_body">
               <img src="img/img_post2.png" alt="" />
@@ -690,7 +740,11 @@
             <br /><br /><br /><br /><br />
           </div>
         </div>
-        <div class="logo_iai"><img src="img/logo_iai.png" alt="" /></div>
+        <div class="logo_iai">
+          <a href="https://www.idosell.com/"
+            ><img src="img/logo_iai.png" alt=""
+          /></a>
+        </div>
       </div>
     </footer>
     <!-- ------------------ END FOOTER ----------------- -->
