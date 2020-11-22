@@ -7,8 +7,21 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1250px) {
+  .tips_posts {
+    flex-direction: column;
+  }
+}
+
 .tips_post {
   width: 48%;
+}
+
+@media (max-width: 1250px) {
+  .tips_post {
+    width: 100%;
+    margin: 24px 0;
+  }
 }
 
 .post_link {
@@ -22,10 +35,32 @@
 
 .post_body {
   display: flex;
+  align-items: center;
   margin: 8px 0;
   line-height: 20px;
 }
 
+.post_body img {
+  width: 90%;
+}
+
+@media (max-width: 675px) {
+  .post_body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post_body img {
+    width: 70%;
+  }
+}
+
 .post_text {
   padding: 24px;
+}
+
+@media (max-width: 675px) {
+  .post_text {
+    padding: 16px 0;
+  }
 }

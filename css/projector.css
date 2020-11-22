@@ -3,13 +3,24 @@
   padding: 28px 0;
 }
 
+@media (max-width: 1250px) {
+  .projector_container {
+    flex-direction: column;
+  }
+}
+
 /* LEFTSIDE */
 
 .leftside {
-  width: 60%;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+}
+
+@media (max-width: 675px) {
+  .leftside {
+    flex-direction: column-reverse;
+  }
 }
 
 .leftside_carousel {
@@ -19,9 +30,24 @@
   width: 82px;
 }
 
+@media (max-width: 675px) {
+  .leftside_carousel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .leftside_carousel-button {
   background: none;
   cursor: pointer;
+}
+
+@media (max-width: 675px) {
+  .leftside_carousel-button {
+    display: none;
+  }
 }
 
 .carousel-item {
@@ -40,10 +66,6 @@
 .carousel-item-active {
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 0px 3px 0px 0px rgb(212, 11, 11);
-  /* border-bottom: 2px solid rgb(212, 11, 11);
-  border-top: none;
-  border-left: 1px solid rgb(255, 255, 255);
-  border-right: 1px solid rgb(255, 255, 255); */
 }
 
 .leftside_img {
@@ -54,8 +76,18 @@
   margin-top: 5px;
 }
 
+@media (max-width: 675px) {
+  .leftside_img {
+    margin: 24px 0;
+  }
+
+  .leftside_img img {
+    width: 100%;
+  }
+}
+
 .leftside_img-badge {
-  background: rgb(206, 46, 42);
+  background: rgb(212, 11, 11);
   color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
@@ -73,11 +105,38 @@
   width: 40%;
 }
 
+@media (max-width: 1250px) {
+  .rightside {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
 .rightside_title {
   font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   width: 85%;
+}
+
+.topside_info {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .rightside_info {
+    display: none;
+  }
+
+  .rightside_title {
+    width: 100%;
+  }
+
+  .topside_info {
+    display: block;
+    margin: 24px auto;
+  }
 }
 
 .rightside_text {
@@ -118,6 +177,36 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1250px) {
+  .rightside_color {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .rightside_carousel {
+    justify-content: center;
+  }
+
+  .rightside_carousel .carousel-item {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 675px) {
+  .rightside_color {
+    text-align: center;
+  }
+
+  .rightside_carousel {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rightside_carousel .carousel-item {
+    margin-right: 4px;
+  }
+}
+
 .rightside_carousel .carousel-item {
   width: 60px;
   height: 60px;
@@ -127,6 +216,13 @@
   display: flex;
 }
 
+@media (max-width: 480px) {
+  .rightside_options {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 .rightside_options-item {
   width: 50%;
   display: flex;
@@ -134,8 +230,20 @@
   justify-content: space-between;
 }
 
+@media (max-width: 480px) {
+  .rightside_options-item {
+    width: 95%;
+  }
+}
+
 .rightside_options-item:first-of-type {
   margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+  .rightside_options-item:first-of-type {
+    margin-right: 0;
+  }
 }
 
 .rightside_options-item select {
@@ -150,6 +258,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 545px) {
+  .rightside_row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rightside_row-item {
+    padding: 12px;
+  }
 }
 
 .rightside_availability {
@@ -218,10 +337,9 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* .rightside_comparison {
-  display: flex;
-  justify-content: space-between;
-} */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 .rightside_negotiate {
   display: flex;
@@ -233,6 +351,32 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 1px solid #ccc;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.rightside_benefits::after {
+  content: "";
+  position: absolute;
+  left: 88%;
+  top: -7.5%;
+  width: 16px;
+  height: 16px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  clear: both;
+}
+
+@media (max-width: 480px) {
+  .rightside_benefits {
+    justify-content: center;
+  }
+  .rightside_benefits::after {
+    content: none;
+  }
 }
 
 .benefit {
@@ -240,6 +384,12 @@ input[type="number"]::-webkit-outer-spin-button {
   align-items: center;
   width: 47%;
   padding: 10px 5px;
+}
+
+@media (max-width: 480px) {
+  .benefit {
+    width: 80%;
+  }
 }
 
 .benefit_icon {

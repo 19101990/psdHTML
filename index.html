@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assassins Arms Shop</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/solid.css" integrity="sha384-yo370P8tRI3EbMVcDU+ziwsS/s62yNv3tgdMqDSsRSILohhnOrDNl142Df8wuHA+" crossorigin="anonymous">
     <script
       src="https://kit.fontawesome.com/bf8886d39e.js"
       crossorigin="anonymous"
@@ -20,16 +21,15 @@
         <div class="container">
           <ul class="top-links_list">
             <li class="top-links_list-item">
-              <img class="top-links_list-item-icon" src="img/icon_phone.png" />
-              Tel. +48 517 989 511
+              <img class="top-links_list-item-icon" src="img/icon_phone.png" /><a href="tel:0048517989511">Tel. +48 517 989 511</a>
             </li>
             <li class="top-links_list-item">
               <img class="top-links_list-item-icon" src="img/icon_mail.png" />
-              E-mail: sklep@assassins-arms.com
+              <a href="mailto:sklep@assassins-arms.com">E-mail: sklep@assassins-arms.com</a>
             </li>
             <li class="top-links_list-item">
               <img class="top-links_list-item-icon" src="img/icon_fb.png" />
-              assasinarms
+              <a href="#">assasinarms</a>
             </li>
           </ul>
         </div>
@@ -40,11 +40,11 @@
       <div class="header">
         <div class="container header--flex">
           <div class="header_logo">
-            <img
+            <a href="#"><img
               class="header_logo-img"
               src="img/logo.png"
               alt="Assassins Arms Shop"
-            />
+            /></a>
           </div>
           <div class="header_search">
             <input
@@ -82,9 +82,14 @@
                 alt=""
               />
               <div class="header_links-basket_item">
-                <p>TWÓJ KOSZYK</p>
-                <p class="header_links--medium">3 454,00 zł</p>
+                <a href="">TWÓJ KOSZYK<br>
+                <span class="header_links--medium">3 454,00 zł</span></a>
               </div>
+            </div>
+          </div>
+          <div id="hamburger" class="mobile_menu">
+            <div class="mobile_icon">
+              <img src="img/icon_hamburger.png" alt="">
             </div>
           </div>
         </div>
@@ -93,16 +98,13 @@
       <!-- nav -->
 
       <div class="nav">
-        <div class="container">
-          <ul class="nav_list">
+        <div class="container nav_container">
+          <ul id="navigation" class="nav_list">
             <li class="nav_list-item dropdown">
-              <a href="#" class="dropdown_button">
-                Gotowe zestawy do gry
-                <img
-                  class="nav_list-item-icon"
-                  src="img/icon_down-arrow.png"
-                  alt=""
-              /></a>
+              <a href="#" class="dropdown-button">
+                Gotowe zestawy do gry 
+                <i class="fas fa-chevron-down nav_list-item-icon"></i>
+                </a>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a href="#">Submenu item 1</a>
@@ -122,13 +124,9 @@
               </ul>
             </li>
             <li class="nav_list-item dropdown">
-              <a href="#">
+              <a href="#" class="dropdown-button">
                 Sprzęt
-                <img
-                  class="nav_list-item-icon"
-                  src="img/icon_down-arrow.png"
-                  alt=""
-              /></a>
+                <i class="fas fa-chevron-down nav_list-item-icon"></i></a>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a href="#">Submenu item 1</a>
@@ -142,13 +140,9 @@
               </ul>
             </li>
             <li class="nav_list-item dropdown">
-              <a href="#">
+              <a href="#" class="dropdown-button">
                 Odzież
-                <img
-                  class="nav_list-item-icon"
-                  src="img/icon_down-arrow.png"
-                  alt=""
-              /></a>
+                <i class="fas fa-chevron-down nav_list-item-icon"></i></a>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a href="#">Submenu item 1</a>
@@ -166,6 +160,20 @@
             </li>
             <li class="nav_list-item">
               <a href="#">Wyprzedaże</a>
+            </li>
+            <!-- LANGUAGE MENU FOR MOBILE -->
+            <li>
+              <div class="mobile_lang-menu">
+                <a href="#" class="mobile_lang-item">
+                  <img src="img/icon_pl.png" />
+                </a>
+                <a href="#" class="mobile_lang-item">
+                  <img src="img/icon_de.png" />
+                </a>
+                <a href="#" class="mobile_lang-item">
+                  <img src="img/icon_en.png" />
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -191,7 +199,15 @@
     <section class="projector">
       <div class="container projector_container">
         <!-- leftside -->
-
+        <div class="topside_info">
+          <h2 class="rightside_title">
+            Marker Tippmann FT-50 Lite 50 Cal Rental (black)
+          </h2>
+          <p class="rightside_text">
+            PRODUCENT: <a href="#" class="rightside_text--red">Dye</a> KOD
+            PRODUKTU: 6578758769878
+          </p>
+        </div>
         <div class="leftside">
           <div class="leftside_carousel">
             <button class="leftside_carousel-button">
@@ -221,20 +237,22 @@
           </div>
 
           <div class="leftside_img">
-            <img src="../img/img_big.png" alt="" />
+            <img src="img/img_big.png" alt="" />
             <span class="leftside_img-badge">PROMOCJA</span>
           </div>
         </div>
 
         <!-- rightside -->
         <div class="rightside">
-          <h2 class="rightside_title">
-            Marker Tippmann FT-50 Lite 50 Cal Rental (black)
-          </h2>
-          <p class="rightside_text">
-            PRODUCENT: <a href="#" class="rightside_text--red">Dye</a> KOD
-            PRODUKTU: 6578758769878
-          </p>
+          <div class="rightside_info">
+            <h2 class="rightside_title">
+              Marker Tippmann FT-50 Lite 50 Cal Rental (black)
+            </h2>
+            <p class="rightside_text">
+              PRODUCENT: <a href="#" class="rightside_text--red">Dye</a> KOD
+              PRODUKTU: 6578758769878
+            </p>
+          </div>
 
           <!-- rightside color -->
 
@@ -290,7 +308,7 @@
           <!-- rightside availability -->
 
           <div class="rightside_row">
-            <div class="rightside_availability">
+            <div class="rightside_availability rightside_row-item">
               <div class="rightside_avaliability-icon">
                 <img src="img/icon_tick.png" alt="" />
               </div>
@@ -313,12 +331,12 @@
           <!-- rightside price -->
 
           <div class="rightside_row">
-            <div class="rightside_price">
+            <div class="rightside_price rightside_row-item">
               <span class="rightside_text--strikethrough">1499,00 zł</span
               ><br />
               <p class="rightside_text--big rightside_text--bold">1278,00 zł</p>
             </div>
-            <div class="rightside_amount">
+            <div class="rightside_amount rightside_row-item">
               <form>
                 <div
                   class="amount-button"
@@ -339,7 +357,7 @@
                 </div>
               </form>
             </div>
-            <div class="rightside_add">
+            <div class="rightside_add rightside_row-item">
               <button class="btn--big">Dodaj do koszyka</button>
             </div>
           </div>
@@ -347,7 +365,7 @@
           <!-- rightside comparison -->
 
           <div class="rightside_row">
-            <div class="rightside_negotiate">
+            <div class="rightside_negotiate rightside_row-item">
               <img class="icon-right" src="img/icon_cash.png" alt="" />
               <p class="text--medium text--bold">
                 Znalazłeź ten produkt taniej?<br /><a href="#"
@@ -411,7 +429,7 @@
     <!-- ------------------- HOTSPOT ------------------- -->
 
     <section class="hotspot">
-      <div class="container">
+      <div class="container hotspot_container">
         <div class="hotspot_title">
           <img class="icon-right" src="img/icon_aa.png" alt="" />
           <h2 class="text--title">Dobierz do kompletu</h2>
@@ -489,22 +507,30 @@
             <div class="question">
               <button class="question_acc text--medium text--bold">
                 Czy ten pistolet jest idealny do gry w paintballa?
-                <img src="img/icon_down-arrow.png" alt="" />
+                <i class="fas fa-angle-down"></i>
               </button>
               <p class="question_text text--small">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, a
                 commodi laborum nesciunt rem totam culpa explicabo delectus
                 adipisci molestias deleniti corrupti architecto in sit
-                laboriosam iure ipsa nostrum illum?
+                laboriosam iure ipsa nostrum illum? Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus
+                adipisci molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus.
               </p>
             </div>
             <div class="question">
               <button class="question_acc text--medium text--bold border">
                 Czy ten model posiada mechanizm spustowy?
-                <img src="img/icon_down-arrow.png" alt="" />
+                <i class="fas fa-angle-down"></i>
               </button>
               <p class="question_text text--small hide">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus
+                adipisci molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? Quod, a
                 commodi laborum nesciunt rem totam culpa explicabo delectus
                 adipisci molestias deleniti corrupti architecto in sit
                 laboriosam iure ipsa nostrum illum?
@@ -513,10 +539,13 @@
             <div class="question">
               <button class="question_acc text--medium text--bold border">
                 Jakie dobrać naboje do tego sprzętu?
-                <img src="img/icon_down-arrow.png" alt="" />
+                <i class="fas fa-angle-down"></i>
               </button>
               <p class="question_text text--small hide">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus
+                adipisci molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? Quod, a
                 commodi laborum nesciunt rem totam culpa explicabo delectus
                 adipisci molestias deleniti corrupti architecto in sit
                 laboriosam iure ipsa nostrum illum?
@@ -525,13 +554,18 @@
             <div class="question">
               <button class="question_acc text--medium text--bold border">
                 Nie moge znależć instrukcji, czy mi ją doślecie?
-                <img src="img/icon_down-arrow.png" alt="" />
+                <i class="fas fa-angle-down"></i>
               </button>
               <p class="question_text text--small hide">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, a
                 commodi laborum nesciunt rem totam culpa explicabo delectus
                 adipisci molestias deleniti corrupti architecto in sit
-                laboriosam iure ipsa nostrum illum?
+                laboriosam iure ipsa nostrum illum? Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus
+                adipisci molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? Molestias deleniti corrupti architecto in sit
+                laboriosam iure ipsa nostrum illum? Quod, a
+                commodi laborum nesciunt rem totam culpa explicabo delectus
               </p>
             </div>
             <div class="questions_row">
@@ -669,9 +703,11 @@
           <div class="footer_col">
             <p class="text--medium footer_title">Kontakt</p>
             <ul class="footer_list">
-              <li class="text--big">+48 574 046 421</li>
+              <li class="text--big">
+                <a href="tel:0048517989511" class="text--big">+48 574 046 421</a>
+              </li>
               <li>
-                <a href="#" class="text--small">kontakt@assasinarmy.pl</a>
+                <a href="mailto:sklep@assassins-arms.com" class="text--small">kontakt@assasinarmy.pl</a>
               </li>
               <li>
                 <a href="#"
@@ -748,6 +784,7 @@
       </div>
     </footer>
     <!-- ------------------ END FOOTER ----------------- -->
+    <script src="js/mobileMenu.js"></script>
     <script src="js/amountHandler.js"></script>
     <script src="js/accordionHandler.js"></script>
   </body>

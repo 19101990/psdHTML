@@ -2,10 +2,22 @@ footer {
   background: url("../img/bg_footer.png"), rgb(23, 23, 23);
   background-size: contain;
   background-repeat: no-repeat;
-  /* max-height: 550px; */
   margin-top: 54px;
   color: rgb(255, 255, 255);
   padding-top: 300px;
+}
+
+@media (max-width: 850px) {
+  footer {
+    margin-top: 24px;
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding-top: 100px;
+  }
 }
 
 .footer_container {
@@ -15,6 +27,28 @@ footer {
 .footer_links {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .footer_links {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.footer_col {
+  padding: 16px;
+}
+
+@media (max-width: 850px) {
+  .footer_col {
+    min-width: 42%;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.1em;
+  }
 }
 
 .footer_list {
@@ -39,7 +73,7 @@ footer {
 }
 
 .icon_social {
-  margin: 16px 24px 16px 0;
+  margin: 16px 8px;
 }
 
 .icon-footer {

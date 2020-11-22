@@ -1,5 +1,5 @@
 .hotspot {
-  margin-top: 64px;
+  margin-top: 48px;
 }
 
 .hotspot_title {
@@ -13,6 +13,14 @@
   padding: 44px 24px;
 }
 
+@media (max-width: 1250px) {
+  .hotspot_items {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
 .hotspot_item {
   display: flex;
   align-items: center;
@@ -20,6 +28,26 @@
   padding-left: 24px;
   cursor: pointer;
   transition: box-shadow 0.35s ease-in;
+}
+
+@media (max-width: 1250px) {
+  .hotspot_item {
+    max-width: 40%;
+    margin: 24px 12px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 675px) {
+  .hotspot_item {
+    min-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotspot_item {
+    min-width: 90%;
+  }
 }
 
 .hotspot_item:hover {
