@@ -1,3 +1,5 @@
+/* ================== TIPS ================== */
+
 .tips {
   margin-top: 64px;
 }
@@ -30,7 +32,7 @@
 }
 
 .post_link:hover {
-  color: rgb(212, 11, 11);
+  color: var(--accent-color);
 }
 
 .post_body {

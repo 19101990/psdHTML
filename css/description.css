@@ -1,3 +1,5 @@
+/* ================== DESCRIPTION ================== */
+
 .desc_section {
   background: url("../img/bg_color-paint.png");
   background-position: right bottom;
@@ -54,6 +56,8 @@
   padding: 0;
 }
 
+/* ================== QUESTIONS ================== */
+
 .description_questions {
   margin-top: 54px;
 }
@@ -101,15 +105,13 @@
 
 .hide {
   display: none;
-  /* transition: all 0.35s ease-in;
-  opacity: 0;
-  height: 0;
-  overflow: hidden; */
 }
 
 .border {
   border-bottom: 1px solid #eee;
 }
+
+/* ================== PARAMETERS ================== */
 
 .parameters {
   width: 26%;
@@ -125,7 +127,7 @@
 }
 
 .parameters_banner {
-  background: rgb(212, 11, 11) url("../img/bg_banner_red-paint.png");
+  background: var(--accent-color) url("../img/bg_banner_red-paint.png");
   background-position: right;
   display: flex;
   justify-content: space-between;

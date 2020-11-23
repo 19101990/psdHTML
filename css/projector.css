@@ -1,3 +1,5 @@
+/* ================== PROJECTOR CONTAINER ================== */
+
 .projector_container {
   display: flex;
   padding: 28px 0;
@@ -9,7 +11,7 @@
   }
 }
 
-/* LEFTSIDE */
+/* ================== LEFTSIDE ================== */
 
 .leftside {
   display: flex;
@@ -53,7 +55,7 @@
 .carousel-item {
   width: 80px;
   height: 80px;
-  margin: 6px 0;
+  margin: 6px 4px;
   border: 1px solid #eee;
   cursor: pointer;
   display: flex;
@@ -65,7 +67,7 @@
 .carousel-item:hover,
 .carousel-item-active {
   border: 1px solid rgb(255, 255, 255);
-  box-shadow: 0px 3px 0px 0px rgb(212, 11, 11);
+  box-shadow: 0px 3px 0px 0px var(--accent-color);
 }
 
 .leftside_img {
@@ -87,7 +89,7 @@
 }
 
 .leftside_img-badge {
-  background: rgb(212, 11, 11);
+  background: var(--accent-color);
   color: rgb(255, 255, 255);
   position: absolute;
   top: 0;
@@ -98,7 +100,7 @@
   clip-path: polygon(14% 0, 100% 0%, 100% 100%, 14% 100%, 0% 50%);
 }
 
-/* RIGHTSIDE */
+/* ================== RIGHTSIDE ================== */
 
 .rightside {
   margin: 0 0 0 16px;
@@ -145,7 +147,7 @@
 }
 
 .rightside_text--red {
-  color: rgb(206, 46, 42);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -170,6 +172,8 @@
 .rightside_text--big {
   font-size: 30px;
 }
+
+/* ================== rightside color ================== */
 
 .rightside_carousel {
   display: flex;
@@ -212,6 +216,8 @@
   height: 60px;
 }
 
+/* ================== rightside options ================== */
+
 .rightside_options {
   display: flex;
 }
@@ -253,6 +259,8 @@
   font-size: 11px;
 }
 
+/* ================== rightside row ================== */
+
 .rightside_row {
   margin: 20px 0;
   display: flex;
@@ -271,6 +279,8 @@
   }
 }
 
+/* ================== rightside availability ================== */
+
 .rightside_availability {
   display: flex;
   align-items: center;
@@ -285,6 +295,8 @@
   justify-content: center;
   margin-right: 12px;
 }
+
+/* ================== rightside price ================== */
 
 .rightside_amount form {
   width: auto;
@@ -345,6 +357,8 @@ input[type="number"] {
   display: flex;
   align-items: center;
 }
+
+/* ================== rightside benefits ================== */
 
 .rightside_benefits {
   padding: 10px;

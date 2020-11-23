@@ -1,4 +1,4 @@
-/* TOP LINKS */
+/* ================== TOP LINKS ================== */
 
 .top-links {
   background: rgb(46, 46, 46);
@@ -18,7 +18,7 @@
 
 .top-links_list-item {
   margin: 12px 40px 12px 0;
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   font-size: 11px;
 }
 
@@ -31,7 +31,7 @@
   margin-right: 6px;
 }
 
-/* HEADER */
+/* ================== HEADER ================== */
 
 .header {
   background: rgb(234, 234, 234) url("../img/bg_header.png");
@@ -78,6 +78,8 @@
 .header_links--medium {
   font-size: 17px;
 }
+
+/* ================== LANGUAGE ================== */
 
 .lang_dropdown {
   position: relative;
@@ -127,15 +129,35 @@
   height: auto;
 }
 
+/* ================== BASKET ================== */
+
 .header_links-basket {
   display: flex;
   align-items: center;
-  color: rgb(251, 251, 251);
+  color: rgb(255, 255, 255);
   padding: 0 15px;
   position: relative;
   min-height: 5px;
   min-width: 80px;
   z-index: 100;
+}
+
+.basket_icon-container {
+  position: relative;
+}
+
+.basket_icon-amount {
+  position: absolute;
+  color: var(--accent-color);
+  text-align: center;
+  background: rgb(255, 255, 255);
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  top: -10px;
+  right: 2px;
+  cursor: pointer;
 }
 
 .header_links-basket::after {
@@ -145,7 +167,7 @@
   background-size: cover;
   background-position: center;
   height: 165px;
-  top: -75px;
+  top: -72px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -161,6 +183,8 @@
   text-decoration: none;
 }
 
+/* ================== HEADER LINKS ================== */
+
 .header_links-account,
 .header_links-lang {
   margin: 0 20px 0 0;
@@ -172,10 +196,10 @@
 }
 
 .header_link:hover {
-  color: rgb(212, 11, 11);
+  color: var(--accent-color);
 }
 
-/* NAVIGATION */
+/* ================== NAVIGATION ================== */
 
 .nav_list {
   list-style: none;
@@ -185,7 +209,7 @@
 
 @media (max-width: 1250px) {
   .nav_list {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -197,16 +221,17 @@
   }
 
   #navigation {
-    transition: all 0.8s ease-in;
+    transition: all 0.3s ease-in;
     transform: translateX(100%);
-    opacity: 0;
+    overflow: hidden;
+    opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     padding: 128px 0px;
-    height: 100%;
-    width: 100%;
+    height: 150%;
+    width: 0%;
     background: rgb(255, 255, 255);
   }
 }
@@ -243,13 +268,13 @@
 }
 
 .nav_list-item a:hover {
-  box-shadow: 0px 2px 0px 0px rgb(212, 11, 11);
+  box-shadow: 0px 2px 0px 0px var(--accent-color);
 }
 
 @media (max-width: 1250px) {
   .nav_list-item a:hover {
     box-shadow: none;
-    color: rgb(212, 11, 11);
+    color: var(--accent-color);
   }
 }
 
@@ -262,6 +287,8 @@
     display: none !important;
   }
 }
+
+/* ================== SUBMENU ================== */
 
 .submenu {
   position: absolute;
@@ -290,7 +317,7 @@
 }
 
 .submenu-item a:hover {
-  color: rgb(212, 11, 11);
+  color: var(--accent-color);
   font-weight: 700;
   box-shadow: none;
 }
@@ -308,6 +335,8 @@
     font-size: 13px;
   }
 }
+
+/* ================== MOBILE MENU ================== */
 
 .mobile_menu {
   display: none;
@@ -343,7 +372,7 @@
   }
 }
 
-/* BREADCRUMBS */
+/* ================== BREADCRUMBS ================== */
 
 .breadcrumbs {
   background: rgb(234, 234, 234) url("../img/bg_header.png");

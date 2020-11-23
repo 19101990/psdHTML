@@ -6,6 +6,10 @@
 @import "tips.css";
 @import "footer.css";
 
+:root {
+  --accent-color: rgb(212, 11, 11);
+}
+
 * {
   margin: 0;
   border: 0;
@@ -47,11 +51,11 @@
 }
 
 .btn--dark:hover {
-  background: rgb(212, 11, 11);
+  background: var(--accent-color);
 }
 
 .btn--big {
-  background: rgb(212, 11, 11) url("../img/bg_button_red-paint.png");
+  background: var(--accent-color) url("../img/bg_button_red-paint.png");
   background-position: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -68,7 +72,7 @@
 }
 
 .btn--medium {
-  background: rgb(212, 11, 11) url("../img/bg_button_red-paint.png");
+  background: var(--accent-color) url("../img/bg_button_red-paint.png");
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
