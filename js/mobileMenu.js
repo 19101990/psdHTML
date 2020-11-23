@@ -11,13 +11,15 @@ const navigation = document.getElementById("navigation");
 
 button.addEventListener("click", function () {
   if (button.innerHTML === closeIcon) {
-    // open menu
+    // opened menu
     button.innerHTML = openIcon;
-    navigation.classList.toggle("show-menu");
+    navigation.style.transform = "translateX(100%)";
+    navigation.style.opacity = "0";
   } else {
     // closed menu
     button.innerHTML = closeIcon;
-    navigation.classList.toggle("show-menu");
+    navigation.style.transform = "translateX(0%)";
+    navigation.style.opacity = "1";
   }
 });
 

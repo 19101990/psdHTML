@@ -96,13 +96,11 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  /* top: 24px; */
   list-style: none;
   padding: 0;
   background: rgb(255, 255, 255);
   box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.082);
   z-index: 1000;
-  /* make the submenu smooth on hover */
   transition: opacity 0.35s ease-in;
   opacity: 0;
   height: 0;
@@ -193,9 +191,23 @@
     right: 0;
     bottom: 0;
     z-index: 2500;
-  }
-  .nav_list {
+    width: 0px;
     display: none;
+    overflow-x: hidden;
+  }
+
+  #navigation {
+    transition: all 0.8s ease-in;
+    transform: translateX(100%);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 128px 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
   }
 }
 
@@ -252,7 +264,6 @@
 }
 
 .submenu {
-  /* display: none; */
   position: absolute;
   left: -5px;
   list-style: none;
@@ -261,7 +272,6 @@
   background: rgb(255, 255, 255);
   box-shadow: 0px 16px 8px 0px rgba(0, 0, 0, 0.082);
   z-index: 1000;
-  /* make the submenu smooth on hover */
   transition: opacity 0.35s ease-in;
   opacity: 0;
   height: 0;
@@ -275,7 +285,6 @@
 }
 
 .dropdown:hover .submenu {
-  /* display: block; */
   opacity: 1;
   height: auto;
 }
@@ -297,7 +306,6 @@
 @media (max-width: 1250px) {
   .submenu-item a {
     font-size: 13px;
-    /* color: rgb(255, 255, 255); */
   }
 }
 
@@ -333,17 +341,6 @@
   .nav_list-item-icon {
     display: none;
   }
-}
-
-.show-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  padding: 128px 0px;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.945);
 }
 
 /* BREADCRUMBS */
